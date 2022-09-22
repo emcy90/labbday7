@@ -11,10 +11,16 @@ memory_profile , what do u think?
 celsius = [0, 10, 20.2, 34.5]
 
 
-def using_list(celsius):
+def convert_using_list(celsius):
     farenheit = [(temp * 9/5) + 32 for temp in celsius]
 
     return print(farenheit)
 
 
-using_list(celsius)
+def convert_using_tuples(celsius):
+    farenheit = tuple((temp * 9/5) + 32 for temp in celsius)
+    return print(farenheit)
+
+
+convert_using_list(celsius)
+convert_using_tuples(celsius)
