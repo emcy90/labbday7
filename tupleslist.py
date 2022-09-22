@@ -21,7 +21,7 @@ def tuple_test(n):
     """function to list a tuple of list"""
     tuple_1 = ()
     i = 0
-    while i < n:
+    while i <= n:
         tuple_1 = tuple_1 + (i,)
         i += 1
 
@@ -33,7 +33,7 @@ def list_test(n):
     my_list = []
     i = 0
 
-    while i < n:
+    while i <= n:
         my_list.append(i)
         i += 1
 
@@ -42,23 +42,23 @@ def list_test(n):
 
 def main():
     """main function to print the tuples and lists"""
-    start_time = timeit.default_timer()
-    tuple_test(128)
-    print(timeit.default_timer() - start_time)
+    start_time_t_1 = timeit.default_timer()
+    tuple_test(10)
+    print(timeit.default_timer() - start_time_t_1)
 
-    start_time = timeit.default_timer()
-    list_test(128)
-    print(timeit.default_timer() - start_time)
+    start_time_l_1 = timeit.default_timer()
+    list_test(10)
+    print(timeit.default_timer() - start_time_l_1)
 
-    start_time = timeit.default_timer()
+    start_time_t_2 = timeit.default_timer()
     tuple_1 = (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
     print(tuple_1)
-    print(timeit.default_timer() - start_time)
+    print(timeit.default_timer() - start_time_t_2)
 
-    start_time = timeit.default_timer()
+    start_time_l_2 = timeit.default_timer()
     list_1 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     print(list_1)
-    print(timeit.default_timer() - start_time)
+    print(timeit.default_timer() - start_time_l_2)
 
 
 if __name__ == '__main__':
