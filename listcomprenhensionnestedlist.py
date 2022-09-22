@@ -1,4 +1,4 @@
-'''
+"""
 a. Using generator Let’s create my_nest_list that
 has 3 numbers of list from 0-4 ,5-9 and 10-14. output:
 [[0, 1, 2, 3, 4], [5, 6, 7, 8, 9], [10,
@@ -17,4 +17,7 @@ e. Using list comprehension flat the nested list my_nest_list
 f. Using itertools /chain to flat the same list.
 g. Compare timing of both operation using time it , what do
 u think ?
-'''
+
+we are stopping here because we don't understand b and c and one of us
+is having migraine now so yeah nope might continue some other day
+"""
